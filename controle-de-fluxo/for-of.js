@@ -18,6 +18,9 @@ const listaDeNumeros = [33, 131, 155, 555, 222, -21, -56]
 for (const numero of listaDeNumeros){
     console.log(numero)
 }
+
+//Código para encontrar nomes em uma lista/ Array com o FOR OF 
+
  const usuarios = ['Antonia', 'Carolina']
 
 for (const usuario of usuarios ){
