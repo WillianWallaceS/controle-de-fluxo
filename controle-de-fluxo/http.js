@@ -11,16 +11,18 @@ const server = http.createServer((request, response) => {
     if(url === '/'){
        response.write('<div> <h1>Hello2from node</h1> <p>http server</p></div>')
         response.end()
+        return
     }
 
     if(url === '/esportes'){
         response.write(JSON.stringify(esportes))
         response.end()
+        return
     }
 
 })
 
-server.listen(3000, 'localhost', () =>{
+server.listen(3000, 'localhost',() => {
     console.log('Server running on http://localhost:3000') //Roda servidor pelo chrome
 })
    
